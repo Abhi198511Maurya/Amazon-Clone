@@ -1,0 +1,757 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Shopping site in India:</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./assets/icon.png" type="image/x-icon">
+</head>
+
+<body>
+    <!-- ------------------------------------------- NAVIGATION BAR---------------------------------------------- -->
+    <nav>
+        <a href="#" class="logo-amazon">
+            <img src="./assets/amazon_logo.png" width="100" alt="">.in
+        </a>
+
+        <div class="nav-country">
+            <img src="./assets/location_icon.png" height="20" alt="">
+            <div>
+                <p>Deliver to</p>
+                <h1>India</h1>
+            </div>
+        </div>
+
+        <div class="" id="delivery-outer-id">
+            <div class="delivery-popup">
+                <div class="popup-header">
+                    <h1>Choose Your Location</h1>
+                </div>
+                <hr>
+                <div class="loader"></div>
+                <div class="popup-content">
+                    <div class="popup-content-text">
+                        <span>Select a delivery location to see availability and delivery option</span>
+                    </div>
+                    <button>Sign in to see your address</button>
+                    <div class="popup-content-section">
+                        <hr>
+                        <h5>or enter an Indian pincode</h5>
+                        <hr>
+                    </div>
+                    <div class="inp-btn">
+                        <input type="text" name="" id="">
+                        <button>Apply</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="nav-search">
+            <div class="nav-search-category">
+                <p>All</p>
+                <select class="custom-select" name="" id="">
+                    <!-- <option value=""></option> -->
+                    <option value="1">All Categories</option>
+                    <option value="2">Alexa Skills</option>
+                    <option value="3">Amazon Devices</option>
+                    <option value="4">Amazon Fashion</option>
+                    <option value="5">Amazon Pharmacy</option>
+                    <option value="6">Amazon Pharmacy</option>
+                    <option value="7">Appliances</option>
+                    <option value="8">Apps & Games</option>
+                    <option value="9">Audiable AudioBooks</option>
+                    <option value="10">Baby</option>
+                    <option value="11">Beauty</option>
+                    <option value="12">Books</option>
+                    <option value="13">Car & Mototbike</option>
+                    <option value="14">Clothing & Accesories</option>
+                    <option value="15">Collectibles</option>
+                    <option value="16">Deals</option>
+                    <option value="17">Electrinics</option>
+                    <option value="18">Furniture</option>
+                    <option value="19">Garden & Outdoors</option>
+                    <option value="20">Gift Cards</option>
+                    <option value="21">Grocery & Gourmet Foods</option>
+                    <option value="22">Health & Personal Care</option>
+                    <option value="23">Home & Kitchen</option>
+                    <option value="24">Industrial & Scientific</option>
+                    <option value="25">Jewellery</option>
+                    <option value="26">Gift Cards</option>
+                    <option value="27">Gift Cards</option>
+                    <option value="28">Gift Cards</option>
+                    <option value="29">Gift Cards</option>
+                    <option value="30">Gift Cards</option>
+                </select>
+            </div>
+
+            <input type="text" name="" class="nav-search-input" placeholder="Search Amazon.in">
+
+            <img src="./assets/search_icon.png" alt="" class="nav-search-icon">
+        </div>
+
+        <div class="nav-language">
+            <button class="dropbtn">
+                <img src="./assets/flag.jpeg" width="25px" alt="">
+                <p>EN</p>
+                <img src="./assets/dropdown_icon.png" width="10px" alt="">
+            </button>
+
+            <div class="dropdown-outer">
+                <div class="dropdown-content">
+                    <div>
+                        <input type="radio" name="language" id="EN" class="radio-check">
+                        <label for="EN">English - EN</label>
+                    </div>
+                    <hr>
+                    <div>
+                        <input type="radio" name="language" id="HI" class="radio-check">
+                        <label for="HI">हिन्दी - HI</label>
+                    </div>
+
+                    <div>
+                        <input type="radio" name="language" id="TA" class="radio-check">
+                        <label for="TA">தமிழ் - TA</label>
+                    </div>
+
+                    <div>
+                        <input type="radio" name="language" id="TE" class="radio-check">
+                        <label for="TE">తెలుగు - TE</label>
+                    </div>
+
+                    <div>
+                        <input type="radio" name="language" id="ML" class="radio-check">
+                        <label for="ML">മലയാളം - ML</label>
+                    </div>
+
+                    <div>
+                        <input type="radio" name="language" id="BN" class="radio-check">
+                        <label for="BN">বাঙ্গালী - BN</label>
+                    </div>
+
+                    <div>
+                        <input type="radio" name="language" id="MR" class="radio-check">
+                        <label for="MR">मराठी - MR</label>
+                    </div>
+
+                    <div class="learn-more">
+                        <a href="#">Learn More</a>
+                    </div>
+                    <hr>
+                    <div class="lang-bottom"><img src="./assets/flag.jpeg" alt="">
+                        <p>You are shopping on Amazon.in</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="nav-text">
+            <a href="signin.html">
+                <p>Hello, Sign in</p>
+                <h1>Account & Lists <img src="./assets/dropdown_icon.png" width="8px" alt=""></h1>
+            </a>
+
+            <div class="signin-dropdown">
+                <div class="signin-dropdown-header">
+                    <button>Sign in</button>
+                    <p>New customer?<span> Start here</span></p>
+                </div>
+                <hr>
+                <div class="signin-dropdown-content">
+                    <ul class="your-list">
+                        <h1>Your Lists</h1>
+                        <li>Create a wish List</li>
+                        <li>Wish from any Website</li>
+                        <li>BabyWish List</li>
+                        <li>Discover your style</li>
+                        <li>Explore Showroom</li>
+                    </ul>
+                    <hr>
+                    <ul class="your-account">
+                        <h1>Your Account</h1>
+                        <li>Your Account</li>
+                        <li>Your Order</li>
+                        <li>Your Recommedations</li>
+                        <li>Your Prime Membership</li>
+                        <li>Your Video</li>
+                        <li>Your Subscribe & Save items</li>
+                        <li>Membership & Subscription</li>
+                        <li>Your Seller Account</li>
+                        <li>Manage Your Content & Device</li>
+                        <li>Your Free Amazon Business Account</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="nav-text-2">
+            <p>Return</p>
+            <h1>& Orders</h1>
+        </div>
+
+        <a href="signin.html" class="mobile-user-icon" style="display: none;">
+            <img src="./assets/user.png" alt="">
+        </a>
+
+        <a href="cart.html" class="nav-cart">
+            <img src="./assets/cart_icon.png" width="35px" alt="">
+            <h4>Cart</h4>
+        </a>
+    </nav>
+    <!-- ----------------------------------------------- NAVIGATION BOTTOM---------------------------------- -->
+    <div class="nav-bottom">
+        <div class="open-sidebar">
+            <img src="./assets/menu_icon.png" width="25px" alt="">
+            All
+        </div>
+
+        <p>Amazon miniTV</p>
+        <p>Sell</p>
+        <p>Best Seller</p>
+        <p>Mobiles</p>
+        <p>Today's Deals</p>
+        <p>Customer Service</p>
+        <p>Electronics</p>
+        <p>Computers</p>
+        <p>Registry</p>
+        <p>Gift Ideas</p>
+    </div>
+    <div class="hover-bg-style">
+
+    </div>
+    <!-- --------------------------------------------------- SIDEBAR NAVIGATION MENU------------------------------------------ -->
+    <div class="sidebar-menu-outer">
+        <span class="cross-icon"><i class="fa-solid fa-xmark"></i></span>
+
+    </div>
+    <div class="sidebar-details">
+        <div class="navouter">
+            <nav class="navbar">
+                <a href="signin.html">
+                    <i class="fa-solid fa-user"></i>
+                </a>
+                <h1>Hello,sign in</h1>
+            </nav>
+        </div>
+
+        <div class="details">
+            <h1><b>Trending</b></h1>
+            <p>Best Seller</p>
+            <p>New Releases</p>
+            <p>Movers and Shakers</p>
+            <hr>
+            <h1><b>Digital Content and Devices</b></h1>
+            <p>Echo & Alexa <i class="fa-solid fa-chevron-right"></i></p>
+            <p>Fire TV <i class="fa-solid fa-chevron-right"></i></p>
+            <p>Kindle E-Readers & eBooks <i class="fa-solid fa-chevron-right"></i></p>
+            <p>Audible Audiobooks <i class="fa-solid fa-chevron-right"></i></p>
+            <p>Amazon Prime Video <i class="fa-solid fa-chevron-right"></i></p>
+            <p>Amazon Prime Music <i class="fa-solid fa-chevron-right"></i></p>
+            <hr>
+            <h1><b>Shop by Category</b></h1>
+            <p>Mobiles, Computers <i class="fa-solid fa-chevron-right"></i></p>
+            <p>TV, Appliances, Electronics <i class="fa-solid fa-chevron-right"></i></p>
+            <p>Men's Fashion <i class="fa-solid fa-chevron-right"></i></p>
+            <p>Women's Fashion <i class="fa-solid fa-chevron-right"></i></p>
+            <p>Home, Kitchen, Pets <i class="fa-solid fa-chevron-right"></i></p>
+            <p>Beauty, Health, Grocery <i class="fa-solid fa-chevron-right"></i></p>
+            <p>Sports, Fitness, Bags, Luggage <i class="fa-solid fa-chevron-right"></i></p>
+            <p>Toys, Baby Products, Kids' Fashion <i class="fa-solid fa-chevron-right"></i></p>
+            <p>Car, Motorbike, Industrial <i class="fa-solid fa-chevron-right"></i></p>
+            <p>Books <i class="fa-solid fa-chevron-right"></i></p>
+            <p>Movies, Music & Video Games <i class="fa-solid fa-chevron-right"></i></p>
+            <hr>
+            <h1><b>Programs & Features</b></h1>
+            <p>Amazon Pay</p>
+            <p>Gift Cards & Mobile Recharges <i class="fa-solid fa-chevron-right"></i></p>
+            <p>Amazon Launchpad</p>
+            <p>Handloom and Handicrafts</p>
+            <hr>
+            <h1><b>Help & Settings</b></h1>
+            <p>Your Account</p>
+            <p>Customer Service</p>
+            <p>Sign in</p>
+        </div>
+    </div>
+    <!-- ------------------------------------------- HEADER SLIDER HERO SECTION ------------------------------------ -->
+    <div class="header-slider">
+        <a href="#" class="control-prev"><i class="fa-solid fa-chevron-left"></i></a>
+        <a href="#" class="control-next"><i class="fa-solid fa-chevron-right"></i></a>
+        <ul>
+            <img src="./assets/header1.jpg" class="header-img" alt="">
+            <img src="./assets/header2.jpg" class="header-img" alt="">
+            <img src="./assets/header3.jpg" class="header-img" alt="">
+            <img src="./assets/header4.jpg" class="header-img" alt="">
+            <img src="./assets/header5.jpg" class="header-img" alt="">
+            <img src="./assets/header6.jpg" class="header-img" alt="">
+            <img src="./assets/header7.jpg" class="header-img" alt="">
+        </ul>
+    </div>
+    <!-- -----------------------------------------------MAIN SECTION OF CONTENT--------------------------------- -->
+    <div class="box-row header-box">
+        <div class="box-col">
+            <h3>Free international returns</h3>
+            <img src="./assets/box1-1.jpg" alt="">
+            <a href="/">Shop More</a>
+        </div>
+
+        <div class="box-col">
+            <h3>Loaner New Year</h3>
+            <img src="./assets/box1-2.jpg" alt="">
+            <a href="/">Shop More</a>
+        </div>
+
+        <div class="box-col">
+            <h3>Toy under $25</h3>
+            <img src="./assets/box1-3.jpg" alt="">
+            <a href="/">Shop More</a>
+        </div>
+
+        <div class="box-col">
+            <h3>Deals in PCs</h3>
+            <img src="./assets/box1-4.jpg" alt="">
+            <a href="/">Shop More</a>
+        </div>
+    </div>
+
+    <div class="box-row">
+        <div class="box-col">
+            <h3>Grooming Product</h3>
+            <img src="./assets/box2-1.jpg" alt="">
+            <a href="/">Shop More</a>
+        </div>
+
+        <div class="box-col">
+            <h3>Latest Devices</h3>
+            <img src="./assets/box2-2.jpg" alt="">
+            <a href="/">Shop More</a>
+        </div>
+
+        <div class="box-col">
+            <h3>Pets Food</h3>
+            <img src="./assets/box2-3.jpg" alt="">
+            <a href="/">Shop More</a>
+        </div>
+
+        <div class="box-col">
+            <h3>Fashion Mart</h3>
+            <img src="./assets/box2-4.jpg" alt="">
+            <a href="/">Shop More</a>
+        </div>
+    </div>
+    <!-- ------------------------------------------------ PRODUCT SLIDER------------------------------------------- -->
+
+    <div class="product-slider">
+        <h2>Related to items you've viewed</h2>
+        <div class="products">
+            <a href="product.html">
+                <img src="./assets/product_img.jpg" alt="">
+            </a>
+            <img src="./assets/product1-1.jpg" alt="">
+            <img src="./assets/product1-2.jpg" alt="">
+            <img src="./assets/product1-3.jpg" alt="">
+            <img src="./assets/product1-4jpg" alt="">
+            <img src="./assets/product1-5.jpg" alt="">
+            <img src="./assets/product1-6.jpg" alt="">
+            <img src="./assets/product1-7.jpg" alt="">
+            <img src="./assets/product1-8.jpg" alt="">
+            <img src="./assets/product1-9.jpg" alt="">
+            <img src="./assets/product1-10.jpg" alt="">
+        </div>
+    </div>
+
+    <div class="box-row">
+        <div class="box-col">
+            <h3>Stationery</h3>
+            <img src="./assets/box3-1.jpg" alt="">
+            <a href="/">Shop More</a>
+        </div>
+
+        <div class="box-col">
+            <h3>Leptop for Study</h3>
+            <img src="./assets/box3-2.jpg" alt="">
+            <a href="/">Shop More</a>
+        </div>
+
+        <div class="box-col">
+            <h3>Office Chairs</h3>
+            <img src="./assets/box3-3.jpg" alt="">
+            <a href="/">Shop More</a>
+        </div>
+
+        <div class="box-col">
+            <h3>Gaming Monitor</h3>
+            <img src="./assets/box3-4.jpg" alt="">
+            <a href="/">Shop More</a>
+        </div>
+    </div>
+    <!-- ------------------------------------------- PRODUCT SLIDER WITH PRICE------------------------------------- -->
+    <div class="product-slider-with-price">
+        <h2>Today’s Deals</h2>
+        <div class="products">
+            <div class="product-card">
+                <div class="product-img-container">
+                    <img src="./assets/product2-1.jpg" alt="">
+                </div>
+
+                <div class="product-offer">
+                    <p>40% Off</p> <span>Limited time deal</span>
+                </div>
+
+                <p class="product-price">₹ 11,999.00 <span> M.R.P: ₹19,999.00</span></p>
+                <h4>This product is the best for you</h4>
+            </div>
+
+            <div class="product-card">
+                <div class="product-img-container">
+                    <img src="./assets/product2-2.jpg" alt="">
+                </div>
+
+                <div class="product-offer">
+                    <p>43% Off</p> <span>Limited time deal</span>
+                </div>
+
+                <!-- <p class="product-price">$ <span>14.49</span>List Price:$19.95</p> -->
+                <h4>Clening Supplies</h4>
+            </div>
+
+            <div class="product-card">
+                <div class="product-img-container">
+                    <img src="./assets/product2-3.jpg" alt="">
+                </div>
+
+                <div class="product-offer">
+                    <p>27% Off</p> <span>Limited time deal</span>
+                </div>
+
+                <!-- <p class="product-price">$ <span>14.49</span>List Price:$19.95</p> -->
+                <h4>Safety and Security</h4>
+            </div>
+
+            <div class="product-card">
+                <div class="product-img-container">
+                    <img src="./assets/product2-4.jpg" alt="">
+                </div>
+
+                <div class="product-offer">
+                    <p>27% Off</p> <span>Limited time deal</span>
+                </div>
+
+                <!-- <p class="product-price">$ <span>14.49</span>List Price:$19.95</p> -->
+                <h4>Water Dispensers & Filters</h4>
+            </div>
+
+            <div class="product-card">
+                <div class="product-img-container">
+                    <img src="./assets/product2-5.jpg" alt="">
+                </div>
+
+                <div class="product-offer">
+                    <p>27% Off</p> <span>Limited time deal</span>
+                </div>
+
+                <!-- <p class="product-price">$ <span>14.49</span>List Price:$19.95</p> -->
+                <h4>Best Offers from Top Brands</h4>
+            </div>
+
+            <div class="product-card">
+                <div class="product-img-container">
+                    <img src="./assets/product2-6.jpg" alt="">
+                </div>
+
+                <div class="product-offer">
+                    <p>27% Off</p> <span>Limited time deal</span>
+                </div>
+
+                <!-- <p class="product-price">$ <span>14.49</span>List Price:$19.95</p> -->
+                <h4>Best Offers on Home & Storage</h4>
+            </div>
+
+            <div class="product-card">
+                <div class="product-img-container">
+                    <img src="./assets/product2-7.jpg" alt="">
+                </div>
+
+                <div class="product-offer">
+                    <p>27% Off</p> <span>Limited time deal</span>
+                </div>
+
+                <!-- <p class="product-price">$ <span>14.49</span>List Price:$19.95</p> -->
+                <h4></h4>
+            </div>
+
+            <div class="product-card">
+                <div class="product-img-container">
+                    <img src="./assets/product2-8.jpg" alt="">
+                </div>
+
+                <div class="product-offer">
+                    <p>27% Off</p> <span>Limited time deal</span>
+                </div>
+
+                <!-- <p class="product-price">$ <span>14.49</span>List Price:$19.95</p> -->
+                <h4>Travel Adapters</h4>
+            </div>
+
+            <div class="product-card">
+                <div class="product-img-container">
+                    <img src="./assets/product2-9.jpg" alt="">
+                </div>
+
+                <div class="product-offer">
+                    <p>27% Off</p> <span>Limited time deal</span>
+                </div>
+
+                <!-- <p class="product-price">$ <span>14.49</span>List Price:$19.95</p> -->
+                <h4>Best Offers for Destinio Travel</h4>
+            </div>
+
+            <div class="product-card">
+                <div class="product-img-container">
+                    <img src="./assets/product2-10.jpg" alt="">
+                </div>
+
+                <div class="product-offer">
+                    <p>27% Off</p> <span>Limited time deal</span>
+                </div>
+
+                <!-- <p class="product-price">$ <span>14.49</span>List Price:$19.95</p> -->
+                <h4>Hard Water Filters</h4>
+            </div>
+
+            <div class="product-card">
+                <div class="product-img-container">
+                    <img src="./assets/product2-11.jpg" alt="">
+                </div>
+
+                <div class="product-offer">
+                    <p>27% Off</p> <span>Limited time deal</span>
+                </div>
+
+                <!-- <p class="product-price">$ <span>14.49</span>List Price:$19.95</p> -->
+                <h4>Best Deals on Asian</h4>
+            </div>
+        </div>
+    </div>
+    <!-- -----------------------------------------------PRODUCT SLIDER--------------------------------------- -->
+    <div class="product-slider">
+        <h2>Related to items you've viewed</h2>
+        <div class="products">
+            <img src="./assets/product1-1.jpg" alt="">
+            <img src="./assets/product1-2.jpg" alt="">
+            <img src="./assets/product1-3.jpg" alt="">
+            <img src="./assets/product1-4jpg" alt="">
+            <img src="./assets/product1-5.jpg" alt="">
+            <img src="./assets/product1-6.jpg" alt="">
+            <img src="./assets/product1-7.jpg" alt="">
+            <img src="./assets/product1-8.jpg" alt="">
+            <img src="./assets/product1-9.jpg" alt="">
+            <img src="./assets/product1-10.jpg" alt="">
+        </div>
+    </div>
+
+    <div class="box-row">
+        <div class="box-col">
+            <h3>Stationery</h3>
+            <img src="./assets/box3-1.jpg" alt="">
+            <a href="/">Shop More</a>
+        </div>
+
+        <div class="box-col">
+            <h3>Leptop for Study</h3>
+            <img src="./assets/box3-2.jpg" alt="">
+            <a href="/">Shop More</a>
+        </div>
+
+        <div class="box-col">
+            <h3>Office Chairs</h3>
+            <img src="./assets/box3-3.jpg" alt="">
+            <a href="/">Shop More</a>
+        </div>
+
+        <div class="box-col">
+            <h3>Gaming Monitor</h3>
+            <img src="./assets/box3-4.jpg" alt="">
+            <a href="/">Shop More</a>
+        </div>
+    </div>
+    <!-- -------------------------------------------FOOTER UPPER SECTION---------------------------------------- -->
+    <div class="footer-upper-outer">
+        <hr>
+        <h2>Inspired by your browsing history</h2>
+        <div class="footer-upper">
+
+            <div class="footer-upper-box">
+                <div class="footer-upper-box-img">
+                    <img src="./assets/lastboximg1.jpg" alt="">
+                </div>
+                <p class="footer-upper-about"><span>realme Buds T300 Truly Wireless in-Ear Earbuds with 30dB ANC, 360°
+                        Spatial Audio Effect...</span><img src="./assets/rating_img.png" height="18px"
+                        alt=""><span>23,114</span></p>
+                <div class="product-offer">
+                    <p>48% Off</p> <span>Limited time deal</span>
+                </div>
+                <p class="product-price"><span>₹2099.00 </span><br>M.R.P: ₹3999.00</p>
+                <p class="delivery-time">Get it by <b>Saturday, April 27</b> FREE Delivery by Amazon</p>
+            </div>
+
+            <div class="footer-upper-box">
+                <div class="footer-upper-box-img">
+                    <img src="./assets/lastboximg2.jpg" alt="">
+                </div>
+                <p class="footer-upper-about"><span>iQOO Z6 Lite 5G (Stellar Green, 6GB RAM, 128GB Storage) with Charger
+                        | Qualcomm Snapdrago...</span><img src="./assets/rating_img.png" height="18px"
+                        alt=""><span>22,768</span></p>
+                <div class="product-offer">
+                    <p>40% Off</p> <span>Limited time deal</span>
+                </div>
+                <p class="product-price"><span>₹11,999.00 </span><br>M.R.P: ₹19,999.00</p>
+                <p class="delivery-time">Get it by <b>Saturday, April 27</b> FREE Delivery by Amazon</p>
+            </div>
+
+            <div class="footer-upper-box">
+                <div class="footer-upper-box-img">
+                    <img src="./assets/lastboximg3.jpg" alt="">
+                </div>
+                <p class="footer-upper-about"><span>HAIRORIGINALS Hair Extensions Invisible Hair Patch with 100% human
+                        hair for women- 10 Inches, Natural Black,...</span><img src="./assets/rating_img.png"
+                        height="18px" alt=""><span>87</span></p>
+                <div class="product-offer">
+                    <p>18% Off</p> <span>Limited time deal</span>
+                </div>
+                <p class="product-price"><span>₹2,699.00 </span><br>M.R.P: ₹3999.00</p>
+                <p class="delivery-time">FREE Delivery </p>
+            </div>
+
+            <div class="footer-upper-box">
+                <div class="footer-upper-box-img">
+                    <img src="./assets/lastboximg4.jpg" alt="">
+                </div>
+                <p class="footer-upper-about"><span>Hair Originals 100% Human Hair Messy Bun Scrunchie For Girls And
+                        Women- (Pack of 1, Natural Black)</span><img src="./assets/rating_img.png" height="18px"
+                        alt=""><span>122</span></p>
+                <div class="product-offer">
+                    <p>25% Off</p> <span>Limited time deal</span>
+                </div>
+                <p class="product-price"><span>₹1,499.00 </span><br>M.R.P: ₹1,999.00</p>
+                <p class="delivery-time">FREE Delivery by Amazon</p>
+            </div>
+
+            <div class="footer-upper-box">
+                <div class="footer-upper-box-img">
+                    <img src="./assets/lastboximg5.jpg" alt="">
+                </div>
+                <p class="footer-upper-about"><span>realme narzo N53 (Feather Gold, 8GB+128GB) 33W Segment Fastest
+                        Charging | Slimmest...</span><img src="./assets/rating_img.png" height="18px"
+                        alt=""><span>15,281</span></p>
+                <div class="product-offer">
+                    <!-- <p>27% Off</p> <span>Limited time deal</span> -->
+                </div>
+                <p class="product-price"><span>8,999.00 </span><br>M.R.P: ₹3999</p>
+                <p class="delivery-time">FREE Delivery by Amazon</p>
+            </div>
+            <div class="footer-upper-box">
+                <div class="footer-upper-box-img">
+                    <img src="./assets/lastboximg6.jpg" alt="">
+                </div>
+                <p class="footer-upper-about"><span>Apple iPhone 13 (128GB) - Starlight
+                        Apple iPhone 13 (128GB) - Starlight</span><img src="./assets/rating_img.png" height="18px"
+                        alt=""><span>26,218</span></p>
+                <div class="product-offer">
+                    <p>17% Off</p> <span>Limited time deal</span>
+                </div>
+                <p class="product-price"><span>₹49,499.00 </span><br>M.R.P: ₹59,999</p>
+                <p class="delivery-time">FREE Delivery by Amazon</p>
+            </div>
+
+            <div class="footer-upper-box">
+                <div class="footer-upper-box-img">
+                    <img src="./assets/lastboximg7.jpg" alt="">
+                </div>
+                <p class="footer-upper-about"><span>TECNO Spark Go 2024 (Gravity Black,6GB* RAM, 64GB ROM)| Segment
+                        First 90Hz Dot-in Displ...</span><br><img src="./assets/rating_img.png" height="18px"
+                        alt=""><span>743</span></p>
+                <div class="product-offer">
+                    <p>5% Off</p> <span>Limited time deal</span>
+                </div>
+                <p class="product-price"><span>₹7,099.00 </span><br>M.R.P: ₹7499.00</p>
+                <p class="delivery-time">Get it by <b>Saturday, April 27</b> FREE Delivery by Amazon</p>
+            </div>
+        </div>
+        <div class="last-hr">
+            <hr>
+        </div>
+    </div>
+    <!-- ----------------------------------------------- FOOTER SECTION------------------------------------------- -->
+    <footer>
+        <div class="foot-panel1">
+            <a href="">Back to Top</a>
+        </div>
+
+        <div class="foot-panel2">
+            <ul>
+                <p>Get to Know Us</p>
+                <a>Careers</a>
+                <a>Blog</a>
+                <a>About Amazon</a>
+                <a>Investor Relations</a>
+                <a>Amazon Devices</a>
+                <a>Amazon Science</a>
+            </ul>
+            <ul>
+                <p>Make Money with Us</p>
+                <a>Sell products on Amazon</a>
+                <a>Sell on Amazon Business</a>
+                <a>Sell apps on Amazon</a>
+                <a>Become an Affiliate</a>
+                <a>Advertise Your Products</a>
+                <a>Self-Publish with Us</a>
+                <a>Host an Amazon Hub</a>
+            </ul>
+            <ul>
+                <p>Amazon Payment Products</p>
+                <a>Amazon Business Card</a>
+                <a>Shop with Points</a>
+                <a>Reload Your Balance</a>
+                <a>Amazon Currency Converter</a>
+            </ul>
+            <ul>
+                <p>Let Us Help You</p>
+                <a>Amazon and COVID-19</a>
+                <a>Your Account</a>
+                <a>Your Orders</a>
+                <a>Shipping Rates & Policies</a>
+                <a>Returns & Replacements</a>
+                <a>Manage Your Content and Devices</a>
+                <a>Amazon Assistant</a>
+                <a>Help</a>
+            </ul>
+        </div>
+        <hr>
+        <div class="foot-panel3">
+            <div class="logo"></div>
+        </div>
+
+        <div class="foot-panel4">
+            <div class="pages">
+                <a>Conditions of Use & Sale</a>
+                <a><span>Privacy Notice</span></a>
+                <a>Your Ads Privacy Choices</a>
+            </div>
+
+            <div class="copyright">
+                <a>© 1996-2024, Amazon.com, Inc. or its affiliates</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
