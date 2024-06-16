@@ -92,8 +92,8 @@ nav {
     z-index: 2;
 }
 
-html:has(.delivery-outer) body {
-    overflow-y: hidden;
+html:has(.delivery-outer) body::-webkit-scrollbar {
+    overflow: hidden;
 }
 
 .delivery-popup {
