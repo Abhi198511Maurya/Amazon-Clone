@@ -16,7 +16,10 @@ a {
     text-decoration: none;
     color: inherit;
 }
-
+main{
+    width: 1513px;
+    margin: auto;
+}
 /* ------------------------------------------------------ NAVIGATION BAR ----------------------------------------------------------- */
 
 nav {
